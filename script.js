@@ -1,5 +1,4 @@
-<script type='text/javascript'>
-	function initEmbeddedMessaging() {
+ 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
@@ -20,5 +19,4 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-</script>
- 
+  
