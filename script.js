@@ -21,4 +21,4 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://tr1755503902062.my.site.com/ESWAmplify1770407387478/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+ 
