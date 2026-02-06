@@ -1,8 +1,4 @@
 <script type='text/javascript'>
-
-
-
-	
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -15,39 +11,6 @@
 					scrt2URL: 'https://tr1755503902062.my.salesforce-scrt.com'
 				}
 			);
-
-
-			window.addEventListener('onEmbeddedMessageSent', function (event) {
-				console.log("✅ onEmbeddedMessageSent");
-				 
-			});
-			  window.addEventListener('onEmbeddedMessagingConversationParticipantChanged', function (event) {
-				console.log("✅ onEmbeddedMessagingConversationParticipantChanged");
- 				 
-			});
-			window.addEventListener("onEmbeddedMessagingReady", () => {
-				console.log("✅ onEmbeddedMessagingReady");
- 				pushPrechatFields();
-			});
-			window.addEventListener('onEmbeddedMessagingConversationStarted', function (event) {
-				console.log("✅ onEmbeddedMessagingConversationStarted");
-			  
-			});
-			window.addEventListener('onEmbeddedMessagingFirstBotMessageSent', function (event) {
-				console.log("✅ onEmbeddedMessagingFirstBotMessageSent");
-				 
-				//embeddedservice_bootstrap.utilAPI.sendTextMessage(message);
-			});
-			window.addEventListener('onEmbeddedMessagingConversationOpened', function (event) {
-				console.log("✅ onEmbeddedMessagingConversationOpened");
-				
-				 
-			});
-			window.addEventListener('onEmbeddedMessagingWindowClosed', function (event) {
-								console.log("✅ onEmbeddedMessagingWindowClosed");
-
-			});
-			
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
