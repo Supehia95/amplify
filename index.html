@@ -1,1 +1,19 @@
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
+			embeddedservice_bootstrap.init(
+				'00DKj00000UY7YZ',
+				'Amplify',
+				'https://tr1755503902062.my.site.com/ESWAmplify1770404895958',
+				{
+					scrt2URL: 'https://tr1755503902062.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://tr1755503902062.my.site.com/ESWAmplify1770404895958/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
