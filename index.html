@@ -11,6 +11,11 @@
 					scrt2URL: 'https://tr1755503902062.my.salesforce-scrt.com'
 				}
 			);
+
+			window.addEventListener("onEmbeddedMessagingReady", () => {
+            console.log("✅ onEmbeddedMessagingReady");
+            
+        });
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
